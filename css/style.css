@@ -1,0 +1,336 @@
+/* ------ Particle JS ------ */
+
+canvas {
+  display: block;
+}
+
+#particles-container {
+  position: fixed;
+ top: 0;
+  left: 0;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.7;
+  
+}
+
+/* ------ General ------ */
+body {
+  font-family: Helvetica;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+
+a {
+  color: aliceblue;
+text-decoration: none;
+  z-index: 1;
+}
+a:hover {
+  color: aliceblue;
+text-decoration: none;
+  z-index: 1;
+}
+.active {
+  font-weight: bold;
+}
+
+/* ------ Section------ */
+.section{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+/* ------ Section Nav-Bar------ */
+.navbar-nav {
+
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+
+
+
+}
+
+.section-home{
+  background-color: rgb(5, 7, 5);
+  background-color: rgb(10, 8, 12);
+  background-color: rgb(7, 5, 10);
+
+}
+/* ------ Section Home ------ */
+.section-home span::after {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 8px 0 14px;
+ 
+}
+
+.section-home span:first-child::before {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 14px 0 8px;
+}
+.section-home h1{
+  font-size: 500%;
+    text-align: center;
+    text-shadow: wheat;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.071;
+    text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;                                                                      
+}
+.section-home h2{
+
+  font-size: 400%;
+  text-align: center;
+  color: #00768C;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.565;
+  text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.section-home h4{
+
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  margin:0;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.home-icon{
+margin-top: 10px;
+font-size: 20px;
+}
+.home-icon a{
+  margin-left: 5px;
+  font-size: 18px;
+}
+  
+/* ------ Section About ------ */
+
+.section-about{
+  background-color: rgb(7, 5, 5);
+  background-color: rgb(7, 5, 10);
+  background-color: rgb(10, 8, 12);
+
+}
+
+/* ------ Section Projects ------ */
+.section-projects{
+  background-color: rgb(10, 6, 17);
+  background-color: rgb(7, 5, 10);
+
+
+}
+.owl-carousel{
+margin-top: 20px;
+
+}
+.project {
+  background-color: rgba(65, 60, 60, 0.2);
+}
+.project-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+.project-art {
+  width: 100%;
+  height: 300px;
+}
+.project-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+.project-description a {
+  margin-bottom: 20px;
+  /* adjust as needed */
+  margin-right: 5px;
+}
+.project-description .fa-github {
+  font-size: 2em;
+  color: black;
+}
+.section-projects span {
+  font-size: 5em;
+}
+
+/* ------ Section footer ------ */
+.section-footer{
+   width: 100%;
+   height: 150px;
+   display: flex;
+   align-items: center;
+   background-color: rgb(0, 0, 0);
+   padding-top: 50px;
+   position: absolute;
+   z-index: 1;
+
+ 
+}
+.refresh span {
+  font-size: 0.8em;
+}
+.refresh{
+
+  font-size: 12px;
+}
+.message{
+  font-size: 20px;
+}
+.social-icons{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 2.3em;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+
+  
+@media screen and (max-width: 750px) {
+  .navbar{
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+  .nav-item{
+  
+    padding-right:15px ;
+  }
+  .section-home{
+    padding-bottom: 10vh;
+  }
+    .section-home h1{
+   
+      font-size: 350%;
+        text-align: center;
+        text-shadow: wheat;
+        font-family: 'Open Sans', Arial, sans-serif;
+        line-height: 1.071;
+        text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;  
+    
+     
+                                                                           
+  }
+    .section-home h2{
+    
+      font-size: 250%;
+      text-align: center;
+      color: #00768C;
+      font-family: "poppins-bold", sans-serif;
+      line-height: 1.565;
+      text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    
+    
+    
+  }
+    .section-home h4{
+      position: relative;
+      margin:0;
+      top: 50%;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 120%;
+      text-align: center;
+      padding-top: 5px;
+    
+    
+    
+  }
+  .section-home .home-icons{
+      text-align: center;
+      align-items: center;
+    
+  }
+ .section-about .row{
+
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  }
+  .section-about{
+
+    padding-top: 15px;
+   }  
+  .section-projects .row{
+
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+  }
+.social-icons {
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+text-align: center;
+
+
+ }
+}
+
+@media screen and (max-width: 992px) {
+
+  .navbar{
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+  .section-about{
+
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    height: unset;
+  
+  }
+  .my-picture{
+
+    display: none;
+  
+  }
+  .nav-item{
+  
+    padding-right:15px ;
+  }
+  .social-icons {
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+text-align: center;
+
+
+  }
+
+
+
+}
+
+
